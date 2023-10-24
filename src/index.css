@@ -18,3 +18,23 @@ body {
     opacity: 1;
   }
 }
+
+::-webkit-scrollbar {
+  width: 0rem; /* You can adjust the width to your preference */
+}
+
+/* Customize the scrollbar track */
+::-webkit-scrollbar-track {
+  background: transparent; /* Set to transparent to hide it */
+}
+
+/* Customize the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: transparent; /* You can set the color you prefer */
+  border-radius: 0rem;
+}
+
+/* When the user hovers over the scrollbar */
+::-webkit-scrollbar-thumb:hover {
+  background: transparent; /* Change color on hover if desired */
+}

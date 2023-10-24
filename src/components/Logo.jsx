@@ -1,7 +1,7 @@
 function Logo() {
   return (
     <div className="w-32 text-end flex p-2 flex-wrap">
-      <span className="flex-grow basis-96 text-blue-600 italic text-xl font-bold">
+      <span className="flex-grow basis-96 text-blue-700 italic text-xl font-bold">
         Flipkart
       </span>
       <div className="flex-grow italic">

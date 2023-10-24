@@ -10,7 +10,7 @@ import { GrFormDown } from "react-icons/gr";
 
 function NavBar() {
   return (
-    <nav className="h-16 bg-white flex flex-row justify-evenly gap-2 items-center sticky top-0">
+    <nav className="h-16 bg-white flex flex-row justify-evenly gap-2 items-center sticky top-0 z-40">
       <Logo />
       <SearchBar />
       <Button icon={<AiOutlineShop />}>Become a Seller</Button>

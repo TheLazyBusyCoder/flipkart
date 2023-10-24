@@ -4,11 +4,11 @@ import { useEffect, useState } from "react";
 import Dots from "./Dots";
 
 const data = [
-  <FakeImage bg={"bg-pink-500"} />,
-  <FakeImage bg={"bg-green-500"} />,
-  <FakeImage bg={"bg-yellow-500"} />,
-  <FakeImage bg={"bg-red-500"} />,
-  <FakeImage bg={"bg-orange-500"} />,
+  <FakeImage bg={"bg-white"} imgs={"/img/banners/atb.png"} />,
+  <FakeImage bg={"bg-white"} imgs={"/img/banners/laptop.png"} />,
+  <FakeImage bg={"bg-white"} imgs={"/img/banners/laptop2.png"} />,
+  <FakeImage bg={"bg-white"} imgs={"/img/banners/tv.png"} />,
+  <FakeImage bg={"bg-white"} imgs={"/img/banners/laptop2.png"} />,
 ];
 function ListBox() {
   const [img, setImg] = useState(0);
@@ -36,7 +36,7 @@ function ListBox() {
       {data[img]}
       <button
         className="absolute rounded-tr-md rounded-br-md  bg-white h-24 w-10 top-1/2 -translate-y-1/2 left-0
-      flex justify-center items-center text-sm
+      flex justify-center shadow-sm shadow-slate-600 items-center text-sm
       "
         onClick={() =>
           setImg((e) => {
@@ -49,7 +49,7 @@ function ListBox() {
       </button>
       <Dots active={img} />
       <button
-        className="absolute rounded-tl-md rounded-bl-md  bg-white h-24 w-10 top-1/2 -translate-y-1/2 right-0 flex justify-center items-center text-sm"
+        className="absolute rounded-tl-md rounded-bl-md  bg-white h-24 w-10 top-1/2 -translate-y-1/2 right-0 flex justify-center shadow-sm shadow-slate-600 items-center text-sm"
         onClick={() =>
           setImg((e) => {
             if (e === 4) return 0;
